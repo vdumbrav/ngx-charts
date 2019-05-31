@@ -177,7 +177,7 @@ var CardComponent = /** @class */ (function () {
         __metadata("design:type", Object)
     ], CardComponent.prototype, "select", void 0);
     __decorate([
-        ViewChild('textEl'),
+        ViewChild('textEl', { static: false }),
         __metadata("design:type", ElementRef)
     ], CardComponent.prototype, "textEl", void 0);
     CardComponent = __decorate([

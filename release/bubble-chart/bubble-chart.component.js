@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || (function () {
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
-    }
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -374,7 +374,7 @@ var BubbleChartComponent = /** @class */ (function (_super) {
         __metadata("design:type", EventEmitter)
     ], BubbleChartComponent.prototype, "deactivate", void 0);
     __decorate([
-        ContentChild('tooltipTemplate'),
+        ContentChild('tooltipTemplate', { static: false }),
         __metadata("design:type", TemplateRef)
     ], BubbleChartComponent.prototype, "tooltipTemplate", void 0);
     __decorate([

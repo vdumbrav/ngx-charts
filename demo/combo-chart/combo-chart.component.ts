@@ -142,7 +142,7 @@ import { scaleBand, scaleLinear, scalePoint, scaleTime } from 'd3-scale';
 })
 export class ComboChartComponent extends BaseChartComponent  {
 
-  @ViewChild(LineSeriesComponent) lineSeriesComponent: LineSeriesComponent;
+  @ViewChild(LineSeriesComponent, {static: false}) lineSeriesComponent: LineSeriesComponent;
 
   @Input() curve: any = curveLinear;
   @Input() legend = false;

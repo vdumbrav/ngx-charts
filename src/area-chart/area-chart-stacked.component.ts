@@ -182,8 +182,8 @@ export class AreaChartStackedComponent extends BaseChartComponent {
   @Output() activate: EventEmitter<any> = new EventEmitter();
   @Output() deactivate: EventEmitter<any> = new EventEmitter();
 
-  @ContentChild('tooltipTemplate', {static: false})tooltipTemplate: TemplateRef<any>;
-  @ContentChild('seriesTooltipTemplate') seriesTooltipTemplate: TemplateRef<any>;
+  @ContentChild('tooltipTemplate', {static: false}) tooltipTemplate: TemplateRef<any>;
+  @ContentChild('seriesTooltipTemplate',{static: false}) seriesTooltipTemplate: TemplateRef<any>;
 
   dims: ViewDimensions;
   scaleType: string;

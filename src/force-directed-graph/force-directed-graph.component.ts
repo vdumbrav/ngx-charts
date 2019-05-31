@@ -95,10 +95,10 @@ export class ForceDirectedGraphComponent extends BaseChartComponent {
   @Output() activate: EventEmitter<any> = new EventEmitter();
   @Output() deactivate: EventEmitter<any> = new EventEmitter();
 
-  @ContentChild('linkTemplate') linkTemplate: TemplateRef<any>;
-  @ContentChild('nodeTemplate') nodeTemplate: TemplateRef<any>;
+  @ContentChild('linkTemplate', {static: false}) linkTemplate: TemplateRef<any>;
+  @ContentChild('nodeTemplate', {static: false}) nodeTemplate: TemplateRef<any>;
   @ContentChild('tooltipTemplate', {static: false})tooltipTemplate: TemplateRef<any>;
-  @ViewChild(ChartComponent, { read: ElementRef })
+  @ViewChild(ChartComponent, { read: ElementRef,static: false })
   chart: ElementRef;
 
   colors: ColorHelper;

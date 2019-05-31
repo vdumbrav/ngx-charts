@@ -209,7 +209,7 @@ var YAxisTicksComponent = /** @class */ (function () {
         __metadata("design:type", Object)
     ], YAxisTicksComponent.prototype, "dimensionsChanged", void 0);
     __decorate([
-        ViewChild('ticksel'),
+        ViewChild('ticksel', { static: false }),
         __metadata("design:type", ElementRef)
     ], YAxisTicksComponent.prototype, "ticksElement", void 0);
     YAxisTicksComponent = __decorate([

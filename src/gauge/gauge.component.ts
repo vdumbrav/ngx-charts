@@ -108,7 +108,7 @@ export class GaugeComponent extends BaseChartComponent implements AfterViewInit 
 
   @ContentChild('tooltipTemplate', {static: false})tooltipTemplate: TemplateRef<any>;
 
-  @ViewChild('textEl') textEl: ElementRef;
+  @ViewChild('textEl',{static: false}) textEl: ElementRef;
 
   dims: ViewDimensions;
   domain: any[];

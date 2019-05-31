@@ -188,7 +188,7 @@ var TooltipArea = /** @class */ (function () {
         __metadata("design:type", Object)
     ], TooltipArea.prototype, "hover", void 0);
     __decorate([
-        ViewChild('tooltipAnchor'),
+        ViewChild('tooltipAnchor', { static: false }),
         __metadata("design:type", Object)
     ], TooltipArea.prototype, "tooltipAnchor", void 0);
     TooltipArea = __decorate([

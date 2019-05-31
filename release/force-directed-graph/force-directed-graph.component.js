@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || (function () {
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
-    }
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -180,19 +180,19 @@ var ForceDirectedGraphComponent = /** @class */ (function (_super) {
         __metadata("design:type", EventEmitter)
     ], ForceDirectedGraphComponent.prototype, "deactivate", void 0);
     __decorate([
-        ContentChild('linkTemplate'),
+        ContentChild('linkTemplate', { static: false }),
         __metadata("design:type", TemplateRef)
     ], ForceDirectedGraphComponent.prototype, "linkTemplate", void 0);
     __decorate([
-        ContentChild('nodeTemplate'),
+        ContentChild('nodeTemplate', { static: false }),
         __metadata("design:type", TemplateRef)
     ], ForceDirectedGraphComponent.prototype, "nodeTemplate", void 0);
     __decorate([
-        ContentChild('tooltipTemplate'),
+        ContentChild('tooltipTemplate', { static: false }),
         __metadata("design:type", TemplateRef)
     ], ForceDirectedGraphComponent.prototype, "tooltipTemplate", void 0);
     __decorate([
-        ViewChild(ChartComponent, { read: ElementRef }),
+        ViewChild(ChartComponent, { read: ElementRef, static: false }),
         __metadata("design:type", ElementRef)
     ], ForceDirectedGraphComponent.prototype, "chart", void 0);
     __decorate([

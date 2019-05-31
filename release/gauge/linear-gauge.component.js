@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || (function () {
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
-    }
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -162,11 +162,11 @@ var LinearGaugeComponent = /** @class */ (function (_super) {
         __metadata("design:type", Object)
     ], LinearGaugeComponent.prototype, "valueFormatting", void 0);
     __decorate([
-        ViewChild('valueTextEl'),
+        ViewChild('valueTextEl', { static: false }),
         __metadata("design:type", ElementRef)
     ], LinearGaugeComponent.prototype, "valueTextEl", void 0);
     __decorate([
-        ViewChild('unitsTextEl'),
+        ViewChild('unitsTextEl', { static: false }),
         __metadata("design:type", ElementRef)
     ], LinearGaugeComponent.prototype, "unitsTextEl", void 0);
     LinearGaugeComponent = __decorate([

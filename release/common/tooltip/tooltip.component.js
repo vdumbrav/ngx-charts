@@ -106,7 +106,7 @@ var TooltipContentComponent = /** @class */ (function () {
         __metadata("design:type", Object)
     ], TooltipContentComponent.prototype, "context", void 0);
     __decorate([
-        ViewChild('caretElm'),
+        ViewChild('caretElm', { static: false }),
         __metadata("design:type", Object)
     ], TooltipContentComponent.prototype, "caretElm", void 0);
     __decorate([

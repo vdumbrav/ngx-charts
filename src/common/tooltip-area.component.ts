@@ -99,7 +99,7 @@ export class TooltipArea {
 
   @Output() hover = new EventEmitter();
 
-  @ViewChild('tooltipAnchor') tooltipAnchor;
+  @ViewChild('tooltipAnchor', {static: false}) tooltipAnchor;
 
   getValues(xVal): any[] {
     const results = [];

@@ -186,7 +186,7 @@ var XAxisTicksComponent = /** @class */ (function () {
         __metadata("design:type", Object)
     ], XAxisTicksComponent.prototype, "dimensionsChanged", void 0);
     __decorate([
-        ViewChild('ticksel'),
+        ViewChild('ticksel', { static: false }),
         __metadata("design:type", ElementRef)
     ], XAxisTicksComponent.prototype, "ticksElement", void 0);
     XAxisTicksComponent = __decorate([

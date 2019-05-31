@@ -78,7 +78,7 @@ export class YAxisComponent implements OnChanges {
   strokeWidth: number = 1;
   padding: number = 5;
 
-  @ViewChild(YAxisTicksComponent) ticksComponent: YAxisTicksComponent;
+  @ViewChild(YAxisTicksComponent, {static: false}) ticksComponent: YAxisTicksComponent;
 
   ngOnChanges(changes: SimpleChanges): void {
     this.update();

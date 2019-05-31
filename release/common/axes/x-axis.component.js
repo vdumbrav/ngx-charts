@@ -105,7 +105,7 @@ var XAxisComponent = /** @class */ (function () {
         __metadata("design:type", Object)
     ], XAxisComponent.prototype, "dimensionsChanged", void 0);
     __decorate([
-        ViewChild(XAxisTicksComponent),
+        ViewChild(XAxisTicksComponent, { static: false }),
         __metadata("design:type", XAxisTicksComponent)
     ], XAxisComponent.prototype, "ticksComponent", void 0);
     XAxisComponent = __decorate([
