@@ -102,7 +102,7 @@ export class HeatMapComponent extends BaseChartComponent {
   @Input() min: any;
   @Input() max: any;
 
-  @ContentChild('tooltipTemplate') tooltipTemplate: TemplateRef<any>;
+  @ContentChild('tooltipTemplate', {static: false})tooltipTemplate: TemplateRef<any>;
 
   dims: ViewDimensions;
   xDomain: any[];

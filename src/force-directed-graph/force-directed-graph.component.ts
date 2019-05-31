@@ -97,7 +97,7 @@ export class ForceDirectedGraphComponent extends BaseChartComponent {
 
   @ContentChild('linkTemplate') linkTemplate: TemplateRef<any>;
   @ContentChild('nodeTemplate') nodeTemplate: TemplateRef<any>;
-  @ContentChild('tooltipTemplate') tooltipTemplate: TemplateRef<any>;
+  @ContentChild('tooltipTemplate', {static: false})tooltipTemplate: TemplateRef<any>;
   @ViewChild(ChartComponent, { read: ElementRef })
   chart: ElementRef;
 

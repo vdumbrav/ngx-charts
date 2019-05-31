@@ -51,7 +51,7 @@ export class TreeMapComponent extends BaseChartComponent {
 
   @Output() select = new EventEmitter();
 
-  @ContentChild('tooltipTemplate') tooltipTemplate: TemplateRef<any>;
+  @ContentChild('tooltipTemplate', {static: false})tooltipTemplate: TemplateRef<any>;
 
   dims: any;
   domain: any;
